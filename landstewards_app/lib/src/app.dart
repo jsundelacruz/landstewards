@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:landstewards_app/src/onboard.dart';
+import 'package:landstewards_app/src/widgets/garden_location.dart';
 
 class LandStewards extends StatelessWidget {
   const LandStewards({super.key});
@@ -7,13 +8,16 @@ class LandStewards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Land Stewards',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: Scaffold(
-        body: const Onboard(),
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const Scaffold(
+              body: Onboard(),
+            ),
+        '/onboard': (context) => const Onboard(),
+        '/location': (context) => const GardenLocation(),
+      },
     );
   }
 }

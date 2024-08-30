@@ -1,19 +1,23 @@
 enum GoalFilterTypes {
-  Playful,
-  Bold,
-  Futuristic,
-  Kind,
-  Creative,
-  Empath,
-  Thoughtful,
-  Clever,
-  Positive,
-  Curious,
-  Adventurous
+  Personal,
+  Food,
+  Environment,
+  Educate,
 }
 
 class GoalFilterController {
   Set<GoalFilterTypes> selectedFilters = {};
+
+  String getEnumDescription(GoalFilterTypes enumValue) {
+    final Map<GoalFilterTypes, String> enumToStringMap = {
+      GoalFilterTypes.Personal: 'Establish a sustainable garden for personal enjoyment.',
+      GoalFilterTypes.Food: 'Grow my own food to reduce costs and improve health.',
+      GoalFilterTypes.Environment: 'Contribute positively to the environment.',
+      GoalFilterTypes.Educate: 'Educate myself and others about sustainable living.',
+    };
+
+    return enumToStringMap[enumValue] ?? 'Unknown';
+  }
 
   void setFilters(List<String> filters) {
     selectedFilters =

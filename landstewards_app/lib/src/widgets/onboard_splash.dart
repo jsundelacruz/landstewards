@@ -19,22 +19,37 @@ class OnboardSplash extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          const Spacer(),
           const Text(
             'Land Stewards',
             style: TextStyle(color: Color(0xFFF2F0DB), fontSize: 43.0),
           ),
-          const Text(
-            'learning to live with the land',
-            style: TextStyle(color: Color(0xFFF2F0DB), fontSize: 23.0),
+          const SizedBox(height: 16.0),
+          SizedBox(
+            width: 215.0,
+            child: Text(
+              'learning to live with the land'.toUpperCase(),
+              style: const TextStyle(color: Color(0xFFF2F0DB), fontSize: 23.0, fontWeight: FontWeight.w700),
+            ),
           ),
-          FilledButton(
-              onPressed: () {
-                pageController.nextPage(
-                  duration: const Duration(milliseconds: 400),
-                  curve: Curves.easeInOut,
-                );
-              },
-              child: const Text('Lets Get Planting')),
+          const Spacer(),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  elevation: 0,
+                  backgroundColor: const Color(0xFF5D7B1E),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+                ),
+                onPressed: () {
+                  pageController.nextPage(
+                    duration: const Duration(milliseconds: 400),
+                    curve: Curves.easeInOut,
+                  );
+                },
+                child: Text('let’s get planting'.toUpperCase(),
+                    style: const TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0, fontWeight: FontWeight.w700))),
+          ),
         ],
       ),
     );
