@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:landstewards_app/src/onboard.dart';
 import 'package:landstewards_app/src/widgets/garden_location.dart';
+import 'package:landstewards_app/src/widgets/plant_details.dart';
 import 'package:landstewards_app/src/widgets/recommendations.dart';
 
 class LandStewards extends StatelessWidget {
@@ -19,6 +20,7 @@ class LandStewards extends StatelessWidget {
         '/onboard': (context) => const Onboard(),
         '/location': (context) => const GardenLocation(),
         '/recommendations': (context) => const Recommendations(),
+        '/plant-details': (context) => const PlantDetails(),
       },
     );
   }

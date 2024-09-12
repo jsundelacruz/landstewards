@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:landstewards_app/src/plant_args.dart';
 
 class Recommendations extends StatelessWidget {
   const Recommendations({super.key});
@@ -36,27 +37,37 @@ class Recommendations extends StatelessWidget {
                         label: const Text('Rosemary'),
                         labelStyle: const TextStyle(color: Color(0xFFFFFFFF)),
                         backgroundColor: const Color(0xFF5F7161),
-                        onPressed: () {}),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/plant-details', arguments: PlantArguments('rosemary'));
+                        }),
                     ActionChip(
                         label: const Text('Yerba Buena'),
                         labelStyle: const TextStyle(color: Color(0xFFFFFFFF)),
                         backgroundColor: const Color(0xFF5F7161),
-                        onPressed: () {}),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/plant-details', arguments: PlantArguments('yerba_buena'));
+                        }),
                     ActionChip(
                         label: const Text('Fig'),
                         labelStyle: const TextStyle(color: Color(0xFFFFFFFF)),
                         backgroundColor: const Color(0xFF5F7161),
-                        onPressed: () {}),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/plant-details', arguments: PlantArguments('fig'));
+                        }),
                     ActionChip(
                         label: const Text('Pomegranate'),
                         labelStyle: const TextStyle(color: Color(0xFFFFFFFF)),
                         backgroundColor: const Color(0xFF5F7161),
-                        onPressed: () {}),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/plant-details', arguments: PlantArguments('pomegranate'));
+                        }),
                     ActionChip(
                         label: const Text('Blueberry'),
                         labelStyle: const TextStyle(color: Color(0xFFFFFFFF)),
                         backgroundColor: const Color(0xFF5F7161),
-                        onPressed: () {}),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/plant-details', arguments: PlantArguments('blueberry'));
+                        }),
                   ]),
                   const SizedBox(height: 26.0),
                   Row(
