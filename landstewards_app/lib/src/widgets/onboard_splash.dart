@@ -22,14 +22,16 @@ class OnboardSplash extends StatelessWidget {
           const Spacer(),
           const Text(
             'Land Stewards',
-            style: TextStyle(color: Color(0xFFF2F0DB), fontSize: 43.0),
+            style:
+                TextStyle(color: Color(0xFFF2F0DB), fontSize: 43.0, fontFamily: 'LTC Law', fontWeight: FontWeight.w400),
           ),
           const SizedBox(height: 16.0),
           SizedBox(
             width: 215.0,
             child: Text(
               'learning to live with the land'.toUpperCase(),
-              style: const TextStyle(color: Color(0xFFF2F0DB), fontSize: 23.0, fontWeight: FontWeight.w700),
+              style: const TextStyle(
+                  color: Color(0xFFF2F0DB), fontSize: 23.0, fontFamily: 'AvantGarde LT', fontWeight: FontWeight.w700),
             ),
           ),
           const Spacer(),
@@ -48,7 +50,11 @@ class OnboardSplash extends StatelessWidget {
                   );
                 },
                 child: Text('let’s get planting'.toUpperCase(),
-                    style: const TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0, fontWeight: FontWeight.w700))),
+                    style: const TextStyle(
+                        color: Color(0xFFFFFFFF),
+                        fontSize: 16.0,
+                        fontFamily: 'AvantGarde LT',
+                        fontWeight: FontWeight.w700))),
           ),
         ],
       ),

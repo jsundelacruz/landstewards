@@ -34,6 +34,7 @@ class _PlantDetailsState extends State<PlantDetails> {
     final plantId = args.id;
 
     return Scaffold(
+      backgroundColor: const Color(0xFFF2F0DB),
       body: FutureBuilder<Map<String, Plant>>(
         future: futurePlants,
         builder: (context, snapshot) {
@@ -45,7 +46,25 @@ class _PlantDetailsState extends State<PlantDetails> {
             final plants = snapshot.data!;
             final plant = plants[plantId];
             if (plant == null) {
-              return const Center(child: Text('Plant not found'));
+              return Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TextButton(
+                      onPressed: () => Navigator.pop(context),
+                      child: const Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(right: 10.0),
+                            child: Icon(Icons.arrow_back, size: 28.0, color: Color(0xFF45423F)),
+                          ),
+                          Text("Back",
+                              style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w700, color: Color(0xFF45423F))),
+                        ],
+                      )),
+                  const Center(child: Text('Plant not found')),
+                ],
+              );
             }
             return Padding(
               padding: const EdgeInsets.all(20.0),
@@ -57,35 +76,78 @@ class _PlantDetailsState extends State<PlantDetails> {
                       onPressed: () => Navigator.pop(context),
                       child: Row(
                         children: [
-                          const Icon(Icons.arrow_back),
-                          Text(plant.name),
+                          const Padding(
+                            padding: EdgeInsets.only(right: 10.0),
+                            child: Icon(Icons.arrow_back, size: 28.0, color: Color(0xFF45423F)),
+                          ),
+                          Text(plant.name,
+                              style: const TextStyle(
+                                  fontSize: 24.0, fontWeight: FontWeight.w700, color: Color(0xFF45423F))),
                         ],
                       )),
-                  Image.asset(plant.image),
-                  Text(plant.description),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 24.0),
+                    child: Image.asset(plant.image),
+                  ),
+                  Text(plant.description,
+                      style: const TextStyle(fontSize: 14.0, height: 1.5, fontWeight: FontWeight.w500)),
+                  const SizedBox(height: 24.0),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Sunlight'),
+                          const Text(
+                            'Sunlight',
+                            style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w700),
+                          ),
                           Text(plant.sunlight),
                         ],
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Water'),
+                          const Text(
+                            'Water',
+                            style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w700),
+                          ),
                           Text(plant.water),
                         ],
                       ),
                     ],
                   ),
-                  const Text('Soil'),
+                  const SizedBox(
+                    height: 14.0,
+                  ),
+                  const Text(
+                    'Soil',
+                    style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w700),
+                  ),
                   Text(plant.soil),
-                  const Text('Planting Schedule'),
+                  const SizedBox(
+                    height: 14.0,
+                  ),
+                  const Text(
+                    'Planting Schedule',
+                    style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w700),
+                  ),
                   Text(plant.plantingSchedule),
-                  const Text('Growth Timeline'),
+                  const SizedBox(
+                    height: 14.0,
+                  ),
+                  const Text(
+                    'Growth Timeline',
+                    style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w700),
+                  ),
                   Text(plant.growthTimeline),
-                  const Text('Companion Plants'),
+                  const SizedBox(
+                    height: 14.0,
+                  ),
+                  const Text(
+                    'Companion Plants',
+                    style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w700),
+                  ),
                   Text(plant.companionPlants),
                 ],
               ),

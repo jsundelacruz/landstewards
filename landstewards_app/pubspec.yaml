@@ -78,17 +78,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: ITC Avant Garde Gothic LT
-  #     fonts:
-  #       - asset: fonts/ITC-Avant-Garde-Gothic-LT-Medium.ttf
-  #       - weight: 700
-  #       - asset: fonts/ITC-Avant-Garde-Gothic-LT-Medium.ttf
-  #       - weight: 800
-  #   - family: LTC Law
-  #     fonts:
-  #       - asset: fonts/LTC-Law-W01-Regular-Italic
-  #       - style: italic
+  fonts:
+    - family: AvantGarde LT
+      fonts:
+        - asset: fonts/ITC-Avant-Garde-Gothic-LT-Medium.ttf
+          weight: 700
+        - asset: fonts/ITC-Avant-Garde-Gothic-LT-Bold.ttf
+          weight: 800
+    - family: LTC Law
+      fonts:
+        - asset: fonts/LTC-Law-W01-Regular-Italic.ttf
+          style: italic
 
   #
   # For details regarding fonts from package dependencies,

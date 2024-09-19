@@ -26,12 +26,17 @@ class _OnboardPlantsState extends State<OnboardPlants> {
           const Spacer(),
           const Text(
             'What types of plants do you want to grow here?',
-            style: TextStyle(color: Color(0xFF45423F), fontSize: 28.0, fontWeight: FontWeight.w700),
+            style: TextStyle(
+                color: Color(0xFF45423F),
+                fontFamily: 'AvantGarde LT',
+                height: 1.035,
+                fontSize: 28.0,
+                fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 16.0),
           const Text(
             'We’ll focus on native plants that will grow well in your area.',
-            style: TextStyle(color: Color(0xFF45423F), fontSize: 16.0),
+            style: TextStyle(color: Color(0xFF45423F), fontFamily: 'AvantGarde LT', fontSize: 16.0),
           ),
           const SizedBox(height: 16.0),
           Wrap(
@@ -88,7 +93,11 @@ class _OnboardPlantsState extends State<OnboardPlants> {
                       }
                     : null,
                 child: Text('show my plant recommendations'.toUpperCase(),
-                    style: const TextStyle(color: Color(0xFFF2F0DB), fontSize: 14.0, fontWeight: FontWeight.w700))),
+                    style: const TextStyle(
+                        color: Color(0xFFF2F0DB),
+                        fontFamily: 'AvantGarde LT',
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w700))),
           ),
         ],
       ),

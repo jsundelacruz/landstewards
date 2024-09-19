@@ -25,12 +25,17 @@ class _OnboardExperienceState extends State<OnboardExperience> {
           const Spacer(),
           const Text(
             'How much experience do you have with building, farming, permaculture?',
-            style: TextStyle(color: Color(0xFF45423F), fontSize: 28.0, fontWeight: FontWeight.w700),
+            style: TextStyle(
+                color: Color(0xFF45423F),
+                height: 1.035,
+                fontFamily: 'AvantGarde LT',
+                fontSize: 28.0,
+                fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 16.0),
           const Text(
             'We can tailor your recommendations based on your experience level.',
-            style: TextStyle(color: Color(0xFF45423F), fontSize: 16.0),
+            style: TextStyle(color: Color(0xFF45423F), fontFamily: 'AvantGarde LT', fontSize: 16.0),
           ),
           const SizedBox(height: 16.0),
           OptionSelector<ExpFilterTypes>(
@@ -66,7 +71,11 @@ class _OnboardExperienceState extends State<OnboardExperience> {
                       }
                     : null,
                 child: const Text('NEXT',
-                    style: TextStyle(color: Color(0xFFF2F0DB), fontSize: 16.0, fontWeight: FontWeight.w700))),
+                    style: TextStyle(
+                        color: Color(0xFFF2F0DB),
+                        fontFamily: 'AvantGarde LT',
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w700))),
           ),
         ],
       ),

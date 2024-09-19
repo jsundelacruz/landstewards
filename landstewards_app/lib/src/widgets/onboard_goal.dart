@@ -24,12 +24,17 @@ class _OnboardGoalState extends State<OnboardGoal> {
           const Spacer(),
           const Text(
             'What do you hope to achieve? ',
-            style: TextStyle(color: Color(0xFF45423F), fontSize: 28.0, fontWeight: FontWeight.w700),
+            style: TextStyle(
+                color: Color(0xFF45423F),
+                fontSize: 28.0,
+                height: 1.035,
+                fontFamily: 'AvantGarde LT',
+                fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 16.0),
           const Text(
             'Let’s get to know your goals in becoming a Land Steward.',
-            style: TextStyle(color: Color(0xFF45423F), fontSize: 16.0),
+            style: TextStyle(color: Color(0xFF45423F), fontFamily: 'AvantGarde LT', fontSize: 16.0),
           ),
           const SizedBox(height: 16.0),
           OptionSelector<GoalFilterTypes>(
@@ -64,7 +69,11 @@ class _OnboardGoalState extends State<OnboardGoal> {
                       }
                     : null,
                 child: const Text('NEXT',
-                    style: TextStyle(color: Color(0xFFF2F0DB), fontSize: 16.0, fontWeight: FontWeight.w700))),
+                    style: TextStyle(
+                        color: Color(0xFFF2F0DB),
+                        fontSize: 16.0,
+                        fontFamily: 'AvantGarde LT',
+                        fontWeight: FontWeight.w700))),
           ),
         ],
       ),

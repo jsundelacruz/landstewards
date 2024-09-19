@@ -33,7 +33,11 @@ class GardenLocation extends StatelessWidget {
                       Navigator.pushNamed(context, '/recommendations');
                     },
                     child: Text('confirm area'.toUpperCase(),
-                        style: const TextStyle(color: Color(0xFFF2F0DB), fontSize: 16.0, fontWeight: FontWeight.w700))),
+                        style: const TextStyle(
+                            color: Color(0xFFF2F0DB),
+                            fontFamily: 'AvantGarde LT',
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w700))),
               ),
             ),
           ),

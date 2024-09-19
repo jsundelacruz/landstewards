@@ -13,7 +13,7 @@
     },
     "yerba-buena": {
       "name": "Yerba Buena",
-      "image": "assets/images/yerba_buena.png",
+      "image": "assets/images/rosemary.png",
       "description": "This hardy herb thrives in a Mediterranean climate with hot, dry summers and mild, wet winters. It acts as a natural pest repellent and can enhance soil health with its deep root system.",
       "sunlight": "Partial shade",
       "water": "Moderate, 1-2 inches per week",
@@ -24,7 +24,7 @@
     },
     "fig": {
       "name": "Fig",
-      "image": "assets/images/fig.png",
+      "image": "assets/images/rosemary.png",
       "description": "This fruit tree thrives in a Mediterranean climate with hot, dry summers and mild, wet winters. It can provide shade and attract pollinators to your garden.",
       "sunlight": "Full sun",
       "water": "Moderate, 1-2 inches per week",
@@ -35,7 +35,7 @@
     },
     "pomegranate": {
       "name": "Pomegranate",
-      "image": "assets/images/pomegranate.png",
+      "image": "assets/images/rosemary.png",
       "description": "This fruit tree thrives in a Mediterranean climate with hot, dry summers and mild, wet winters. It can provide shade and attract pollinators to your garden.",
       "sunlight": "Full sun",
       "water": "Moderate, 1-2 inches per week",
@@ -46,7 +46,7 @@
     },
     "blueberry": {
       "name": "Blueberry",
-      "image": "assets/images/blueberry.png",
+      "image": "assets/images/rosemary.png",
       "description": "This fruit bush thrives in cool, moist climates with acidic soil. It can attract pollinators to your garden and provide a delicious harvest.",
       "sunlight": "Full sun",
       "water": "Moderate, 1-2 inches per week",

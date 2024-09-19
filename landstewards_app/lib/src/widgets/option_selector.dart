@@ -40,7 +40,11 @@ class OptionSelector<T extends Enum> extends StatelessWidget {
                     child: Text(
                       getDescription(option),
                       style: const TextStyle(
-                          color: Color(0xFF45423F), fontSize: 16.0, fontWeight: FontWeight.w500, height: 1.5),
+                          color: Color(0xFF45423F),
+                          fontSize: 16.0,
+                          fontFamily: 'AvantGarde LT',
+                          fontWeight: FontWeight.w500,
+                          height: 1.5),
                       textAlign: TextAlign.left,
                       softWrap: true,
                       maxLines: 3,
