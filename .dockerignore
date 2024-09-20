@@ -1,0 +1,127 @@
+# flyctl launch added from landstewards_app/.gitignore
+# Miscellaneous
+landstewards_app/**/*.class
+landstewards_app/**/*.log
+landstewards_app/**/*.pyc
+landstewards_app/**/*.swp
+landstewards_app/**/.DS_Store
+landstewards_app/**/.atom
+landstewards_app/**/.buildlog
+landstewards_app/**/.history
+landstewards_app/**/.svn
+landstewards_app/**/migrate_working_dir
+
+# IntelliJ related
+landstewards_app/**/*.iml
+landstewards_app/**/*.ipr
+landstewards_app/**/*.iws
+landstewards_app/**/.idea
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+landstewards_app/**/**/doc/api
+landstewards_app/**/**/ios/Flutter/.last_build_id
+landstewards_app/**/.dart_tool
+landstewards_app/**/.flutter-plugins
+landstewards_app/**/.flutter-plugins-dependencies
+landstewards_app/**/.pub-cache
+landstewards_app/**/.pub
+landstewards_app/build
+
+# Symbolication related
+landstewards_app/**/app.*.symbols
+
+# Obfuscation related
+landstewards_app/**/app.*.map.json
+
+# Android Studio will place build artifacts here
+landstewards_app/android/app/debug
+landstewards_app/android/app/profile
+landstewards_app/android/app/release
+
+# flyctl launch added from landstewards_app/android/.gitignore
+landstewards_app/android/**/gradle-wrapper.jar
+landstewards_app/android/.gradle
+landstewards_app/android/captures
+landstewards_app/android/gradlew
+landstewards_app/android/gradlew.bat
+landstewards_app/android/local.properties
+landstewards_app/android/**/GeneratedPluginRegistrant.java
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+landstewards_app/android/**/key.properties
+landstewards_app/android/**/**/*.keystore
+landstewards_app/android/**/**/*.jks
+
+# flyctl launch added from landstewards_app/ios/.gitignore
+landstewards_app/ios/**/**/dgph
+landstewards_app/ios/**/*.mode1v3
+landstewards_app/ios/**/*.mode2v3
+landstewards_app/ios/**/*.moved-aside
+landstewards_app/ios/**/*.pbxuser
+landstewards_app/ios/**/*.perspectivev3
+landstewards_app/ios/**/**/*sync
+landstewards_app/ios/**/.sconsign.dblite
+landstewards_app/ios/**/.tags*
+landstewards_app/ios/**/**/.vagrant
+landstewards_app/ios/**/**/DerivedData
+landstewards_app/ios/**/Icon?
+landstewards_app/ios/**/**/Pods
+landstewards_app/ios/**/**/.symlinks
+landstewards_app/ios/**/profile
+landstewards_app/ios/**/xcuserdata
+landstewards_app/ios/**/**/.generated
+landstewards_app/ios/**/Flutter/App.framework
+landstewards_app/ios/**/Flutter/Flutter.framework
+landstewards_app/ios/**/Flutter/Flutter.podspec
+landstewards_app/ios/**/Flutter/Generated.xcconfig
+landstewards_app/ios/**/Flutter/ephemeral
+landstewards_app/ios/**/Flutter/app.flx
+landstewards_app/ios/**/Flutter/app.zip
+landstewards_app/ios/**/Flutter/flutter_assets
+landstewards_app/ios/**/Flutter/flutter_export_environment.sh
+landstewards_app/ios/**/ServiceDefinitions.json
+landstewards_app/ios/**/Runner/GeneratedPluginRegistrant.*
+
+# Exceptions to above rules.
+!landstewards_app/ios/**/default.mode1v3
+!landstewards_app/ios/**/default.mode2v3
+!landstewards_app/ios/**/default.pbxuser
+!landstewards_app/ios/**/default.perspectivev3
+
+# flyctl launch added from landstewards_app/linux/.gitignore
+landstewards_app/linux/**/flutter/ephemeral
+
+# flyctl launch added from landstewards_app/macos/.gitignore
+# Flutter-related
+landstewards_app/macos/**/**/Flutter/ephemeral
+landstewards_app/macos/**/**/Pods
+
+# Xcode-related
+landstewards_app/macos/**/**/dgph
+landstewards_app/macos/**/**/xcuserdata
+
+# flyctl launch added from landstewards_app/windows/.gitignore
+landstewards_app/windows/**/flutter/ephemeral
+
+# Visual Studio user-specific files.
+landstewards_app/windows/**/*.suo
+landstewards_app/windows/**/*.user
+landstewards_app/windows/**/*.userosscache
+landstewards_app/windows/**/*.sln.docstates
+
+# Visual Studio build-related files.
+landstewards_app/windows/**/x64
+landstewards_app/windows/**/x86
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+landstewards_app/windows/**/*.[Cc]ache
+# but keep track of directories ending in .cache
+!landstewards_app/windows/**/*.[Cc]ache
+fly.toml
