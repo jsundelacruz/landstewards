@@ -43,7 +43,7 @@ class Recommendations extends StatelessWidget {
                       IconButton(onPressed: () {}, icon: const Icon(Icons.cached)),
                     ],
                   ),
-                  Wrap(spacing: 5.0, children: [
+                  Wrap(spacing: 5.0, runSpacing: 5.0, children: [
                     ActionChip(
                         label: const Text('Rosemary'),
                         labelStyle:
